@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>formulario</title>
+</head>
+<body>
+    <main class="form-container"> 
+        <form action="" class="formulario">
+            <h1 class="titulo">Formulario de inscripcion</h1>
+            <label for="nombre">
+                <p>Nombre</p>
+                <input type="text" id="nombre" placeholder="nombre" autocomplete="name">
+            </label>
+            <label for="apellido">
+                <p>Apellidos</p>
+                <input type="text" id="apellido" placeholder="apellidos" autocomplete="name">
+            </label>
+            <label for="cedula">
+                <p>Cedula</p>
+                <input type="text" id="cedula" placeholder="cedula" autocomplete="">
+            </label>
+            <label for="fecha-nacimiento">
+                <p>Fecha de nacimiento</p>
+                <input type="date" id="fecha-nacimiento" placeholder="" autocomplete="">
+            </label>
+            <label for="lugar-nacimiento-pais">
+                <p class="lugar">Lugar de nacimiento</p>
+                <input list="lugar-nacimiento-pais" placeholder="pais">
+                <datalist id="lugar-nacimiento-pais">
+                    <option>colombia</option>
+                    <option>brazil</option>
+                    <option>argentina</option>
+                    <option>bolivia</option>
+                    <option>peru</option>
+                    <option>uruguay</option>
+                    <option>paraguay</option>
+                    <option>ecuador</option>
+                    <option>venezulea</option>
+                    <option>chile</option>
+                </datalist>
+                <input list="lugar-nacimiento-region" placeholder="region">
+                <datalist id="lugar-nacimiento-region">
+                    <option>atlantico</option>
+                    <option>antioquia</option>
+                    <option>bolivar</option>
+                    <option>guajira</option>
+                    <option>magdalena</option>
+                    <option>cordova</option>
+                    <option>choco</option>
+                    <option>cesar</option>
+                    <option>cundinamarca</option>
+                    <option>amazonas</option>
+                </datalist>
+                <input list="lugar-nacimiento-ciudad" placeholder="ciudad">
+                <datalist id="lugar-nacimiento-ciudad">
+                    <option>barranquilla</option>
+                    <option>soledad</option>
+                    <option>malambo</option>
+                    <option>galapa</option>
+                    <option>salgar</option>
+                    <option>puerto colombia</option>
+                    <option>sabanalarga</option>
+                    <option>usiacuri</option>
+                    <option>tubara</option>
+                    <option>santo tomas</option>
+                </datalist>
+            </label>
+            <label for="direccion">
+                    <p>Direccion</p>
+                    <input type="text" id="direccion">
+            </label>
+            <label for="cp">
+                    <p>Codigo postal</p>
+                    <input type="text" id="cp">
+            </label>
+            <label for="email">
+                    <p>Correo electronico</p>
+                    <input type="email" id="email">
+            </label>
+            <label for="contraseña">
+                    <p>Contraseña</p>
+                    <input type="password" id="contraseña">
+            </label>
+            <label for="contraseña-confirmar">
+                    <p>Confirme contraseña</p>
+                    <input type="password" id="contraseña-confirmar">
+            </label>
+                <input type="submit" class="boton">
+        </form>
+    </main>
+</body>
+</html>
